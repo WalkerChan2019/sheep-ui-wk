@@ -19,7 +19,7 @@ function callback() {
       <h2>123--this is the slot</h2>
     </HelloWorld>
 
-    <Test></Test>
+    <Test />
 
     <hr />
     <!-- 1.primary,secondary,text
@@ -27,9 +27,9 @@ function callback() {
   3.disabled
   4.块级block
   5.iconbutton -->
-    <SButton type="primary" size="large">确定</SButton>
-    <SButton type="primary" size="medium">确定</SButton>
-    <SButton type="primary" size="small">确定</SButton>
+    <SButton type="primary" size="large"> 确定 </SButton>
+    <SButton type="primary" size="medium"> 确定 </SButton>
+    <SButton type="primary" size="small"> 确定 </SButton>
   </div>
 </template>
 

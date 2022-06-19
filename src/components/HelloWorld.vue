@@ -20,7 +20,7 @@ console.log(defaultContent);
     <button type="button" @click="count++">count is: {{ count }}</button>
     <hr />
     <button @click="$emit('someEvent')">click me</button>
-    <slot></slot>
+    <slot />
   </div>
 </template>
 

@@ -13,5 +13,5 @@ import { defineComponent } from "vue";
 export default defineComponent({
   render() {
     return <div>tree 黑胡椒按揭房间啊</div>;
-  },
+  }
 });
