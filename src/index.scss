@@ -1,3 +1,8 @@
+// 我们打算基于Tailwind CSS编写我们的样式
+// 之所以引入TailwindCSS主要是为了提高编写样式的效率，另外融入这套体系之后，社区中一些已经存在的theme预设就能直接派上用场。
+// 另外我们引入sass，未来我们利用它增加样式的可维护性。
+
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";

@@ -16,7 +16,8 @@ console.log(defaultContent);
 
 <template>
   <div>
-    <h1>{{ msg }}</h1>
+    <!-- 添加tailwind 样式 -->
+    <h1 class="text-3l font-bold underline">{{ msg }}</h1>
     <button type="button" @click="count++">count is: {{ count }}</button>
     <hr />
     <button @click="$emit('someEvent')">click me</button>
