@@ -6,6 +6,9 @@ import Test from "./components/Test";
 function callback() {
   console.log("callback");
 }
+function onClick() {
+  console.log("onClick event ");
+}
 </script>
 
 <template>
@@ -18,8 +21,16 @@ function callback() {
     >
       <h2>123--this is the slot</h2>
     </HelloWorld>
+    <hr />
 
-    <Test />
+    <Test @click="onClick">
+      <!-- <template v-slot:default> aaaaa </template> -->
+      <template #default> aaaaa </template>
+      <template #title> <h3>title</h3> </template>
+    </Test>
+
+    <!-- <Test v-slots={{title: ()=> <h3>title</h3>}}>
+    </Test> -->
 
     <hr />
     <!-- 1.primary,secondary,text
