@@ -1,0 +1,128 @@
+// 所有不同type按钮自定义样式
+@import '../../style/variable.scss';
+
+.s-btn {
+  // 布局
+  @apply inline-flex items-center justify-center;
+  // 元素
+  @apply border-[1px] border-solid border-transparent
+  h-[28px] py-0 px-[20px]
+  bg-transparent;
+  border-radius: $s-border-radius;
+
+  // 文本属性
+  @apply outline-0 leading-normal whitespace-nowrap
+     cursor-pointer;
+
+  // 文字样式
+  font-size: $s-font-size-md;
+
+  // 其他样式
+  transition: background-color $s-animation-duration-slow
+      $s-animation-ease-in-out-smooth,
+    border-color $s-animation-duration-slow $s-animation-ease-in-out-smooth,
+    color $s-animation-duration-slow $s-animation-ease-in-out-smooth;
+
+    //主要按钮
+  &.s-btn--primary{
+    color: $s-light-text;
+    background-color: $s-primary;
+    &:hover,
+    &:focus{
+      background-color: $s-primary-hover;
+    }
+  }
+  // 次要按钮
+  &.s-btn--secondary{
+    color: $s-text;
+    background-color: $s-block;
+    &:hover,:focus,:active{
+      color: $s-brand-active;
+      border: $s-form-control-line-active;
+    }
+  }
+  // text
+  &.s-btn--text{
+    padding: 0;
+    &:hover,:focus,:active{
+      color: $s-text;
+      border: $s-light-text;
+    }
+  }
+}
+
+
+// // 按钮类型的配置
+// $type: (
+//   primary: (
+//     color: $s-light-text,
+//     background-color: $s-primary,
+//   ),
+//   secondary: (
+//     color: $s-text,
+//     background-color: $s-block,
+//     border-color: $s-line,
+//   ),
+//   text: (
+//     padding: 0,
+//     background-color: $s-text,
+//     color: $s-brand-active,
+//   ),
+// );
+
+// // 伪类的配置
+// $pseudo: (
+//   primary: (
+//     hover: (
+//       background-color: $s-primary-hover,
+//     ),
+//     focus: (
+//       background-color: $s-primary-hover,
+//     ),
+//     active: (
+//       background-color: $s-primary-active,
+//     ),
+//   ),
+//   secondary: (
+//     hover: (
+//       border-color: $s-form-control-line-active,
+//       color: $s-brand-active,
+//     ),
+//     focus: (
+//       border-color: $s-form-control-line-active,
+//       color: $s-brand-active,
+//     ),
+//     active: (
+//       border-color: $s-form-control-line-active,
+//       color: $s-brand-active,
+//     ),
+//   ),
+//   text: (
+//     hover: (
+//       color: $s-brand-active-focus,
+//     ),
+//     focus: (
+//       color: $s-brand-active-focus,
+//     ),
+//     active: (
+//       color: $s-brand-active-focus,
+//     ),
+//   )
+// );
+
+// // 按钮尺寸
+// $size: (
+//   small: (
+//     height: 24px,
+//     padding: 0 16px,
+//     font-size: $s-font-size-sm,
+//   ),
+//   medium: (
+//     font-size: $s-font-size-md,
+//   ),
+//   large: (
+//     height: 32px,
+//     padding: 0 24px,
+//     font-size: $s-font-size-lg,
+//   ),
+// );

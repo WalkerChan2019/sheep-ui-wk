@@ -39,8 +39,8 @@ function onClick() {
   4.块级block
   5.iconbutton -->
     <SButton type="primary" size="large"> 确定 </SButton>
-    <SButton type="primary" size="medium"> 确定 </SButton>
-    <SButton type="primary" size="small"> 确定 </SButton>
+    <SButton type="secondary" size="medium"> 确定 </SButton>
+    <SButton type="text" size="small"> 确定 </SButton>
   </div>
 </template>
 
