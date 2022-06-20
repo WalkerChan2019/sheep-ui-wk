@@ -10,7 +10,7 @@ import { useAttrs, useSlots } from "vue";
 const attrs = useAttrs();
 console.log(attrs);
 const slots = useSlots();
-const defaultContent = slots.default();
+const defaultContent = slots.default ? slots.default() : "";
 console.log(defaultContent);
 </script>
 
