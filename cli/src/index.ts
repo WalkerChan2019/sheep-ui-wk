@@ -3,8 +3,14 @@
 import { Command } from "commander";
 // import { onCreate } from "./commands/create";
 
+import * as inquirer from "inquirer"; // inquirer@8.2.2只有cjs格式; 9.0是ems
+// console.log(inquirer);
+// import inquirer from "inquirer";
+const prompt = inquirer.default.promt;
+
 // 创建命令对象
 const cmd = new Command();
+const CREATE_TYPE = ["components", "lib-entry"];
 
 // 注册命令、参数、回调
 cmd
@@ -16,8 +22,26 @@ cmd
   .option("-t --type <type>", `创建类型，可选值：component, lib-entry`)
   // 注册命令回调
   // .action(onCreate);
-  .action(args => {
+  .action(async args => {
     console.log(args);
+    let { type } = args;
+    if (!type) {
+      const result = await prompt([
+        {
+          // 输入后的属性名
+          name: "type",
+          // 交互的方式为列表
+          type: "list",
+          // 提示信息
+          messages: "（必填）请选择创建类型：",
+          // 选项列表
+          choices: CREATE_TYPE,
+          //默认选项
+          default: 0
+        }
+      ]);
+      type = result;
+    }
   });
 
 // 执行命令行参数解析
