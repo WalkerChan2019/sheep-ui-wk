@@ -44,7 +44,7 @@ const createPackageJson = name => {
     "license": "ISC",
     "bugs": {
       "url": "https://github.com/57code/sheep-ui/issues"
-    },
+    }
   }`;
   // 存在包名称，给单组件生成package.json文件
   if (name) {
