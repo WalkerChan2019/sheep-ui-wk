@@ -16,11 +16,12 @@ export default defineComponent({
       }
     }
   },
-  setup(props, { slots, emit }) {
+  setup(props, { slots }) {
+    //emit  ----> 此处npm run lint会报错：emit
     const count = ref(0);
     const inc = () => {
       count.value++;
-      emit("click");
+      // emit("click");
     };
 
     return () => {
@@ -37,12 +38,12 @@ export default defineComponent({
           点击test:{count.value}
           <br />
           {/* 传值 参数 修饰符 */}
-          <input
+          {/* <input
             type="text"
             v-focus={["val", "arg", ["modifier"]]}
             v-model:foo={count.value}
-          />
-          <input type="text" v-focus v-model={count.value} />
+          /> */}
+          {/* <input type="text" v-focus v-model={count.value} /> */}
           <div>{span}</div>
           <ul>
             {list.value.map(str => (
