@@ -5,4 +5,7 @@ import Button from "./button";
 
 import "./index.scss";
 
-createApp(App).use(Button).mount("#app");
+// 使用全量导出
+import sheepUI from "../build/";
+
+createApp(App).use(sheepUI).mount("#app"); //.use(Button)
