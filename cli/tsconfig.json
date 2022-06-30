@@ -1,5 +1,5 @@
 {
- "compilerOptions": {
+  "compilerOptions": {
     "outDir": "./build",
     "module": "commonjs"
   }
