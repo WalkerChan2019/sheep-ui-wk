@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "wk": "tsnd ./src/index.ts",
-    "dev": "tsnd ./src/index.ts create -t",
+    "wk2": "tsnd ./src/index.ts create -t",
+    "dev": "tsc --watch",
+    "cli": "node ./build/src/index.js create",
     "build": "tsc"
   },
   "dependencies": {

@@ -27,7 +27,8 @@ export async function onCreate(args = { type: "" }) {
         default: 0
       }
     ]);
-    type = result;
+    console.log("result:", result);
+    type = result.type;
   }
   // 如果获取的类型不在我们支持范围内，那么输出错误提示并重新选择
   if (CREATE_TYPES.every(t => type !== t)) {

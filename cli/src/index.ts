@@ -2,7 +2,7 @@
 
 import { Command } from "commander";
 
-import { onCreate } from "../command/create-1";
+import { onCreate } from "../command/create";
 
 import * as inquirer from "inquirer"; // inquirer@8.2.2只有cjs格式; 9.0是ems
 // console.log(inquirer);
