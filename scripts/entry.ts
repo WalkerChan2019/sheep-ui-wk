@@ -1,7 +1,7 @@
 // 入口文件
 // 1.引入实现组件批量导出去
 import type { App } from "vue";
-import ButtonPlugin, { Button } from "../src/button";
+import ButtonPlugin, { Button } from "../src/components/button";
 // import version from '../src/version'
 // 2.导出这些组件
 export { Button };
