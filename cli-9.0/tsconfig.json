@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "outDir": "./build",
+    "module": "ES2015",
+    "moduleResolution": "node"
+  }
+}
