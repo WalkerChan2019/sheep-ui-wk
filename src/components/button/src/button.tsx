@@ -16,3 +16,6 @@ export default defineComponent({
     };
   }
 });
+
+// 对TSX语法，目前实现shift + alt +F 快捷键 自动格式化
+// 对js和ts，保存时自动格式化，且带有语法提示

@@ -4,8 +4,8 @@ module.exports = {
     es2021: true
   },
   extends: [
-    // "eslint:recommended",
-    // "plugin:vue/essential",
+    // "eslint:recommended", // 会导致 报错：module is not defined
+    "plugin:vue/essential",
     "plugin:@typescript-eslint/recommended",
     "plugin:vue/vue3-recommended",
     "plugin:prettier/recommended"
@@ -17,6 +17,8 @@ module.exports = {
   },
   plugins: ["vue", "@typescript-eslint"],
   rules: {
+    // quotes: ['error', 'double'],
+    // semi: [2, "always"], // 语句强制分号结尾
     "@typescript-eslint/no-var-requires": 0
   }
 };
