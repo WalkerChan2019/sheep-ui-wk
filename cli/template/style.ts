@@ -4,5 +4,5 @@ export default function genStyleTemplate(name) {
   /* your component style */
 
 }
-`;
+`
 }

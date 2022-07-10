@@ -1,13 +1,13 @@
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from "./components/HelloWorld.vue";
-import Test from "./components/Test";
+import HelloWorld from './components/HelloWorld.vue'
+import Test from './components/Test'
 function callback() {
-  console.log("callback");
+  console.log('callback')
 }
 function onClick() {
-  console.log("onClick event ");
+  console.log('onClick event ')
 }
 </script>
 

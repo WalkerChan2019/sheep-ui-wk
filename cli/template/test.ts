@@ -1,4 +1,4 @@
-import { upperFirst } from "./utils";
+import { upperFirst } from './utils'
 
 export default function genTestTemplate(name) {
   return `\
@@ -11,5 +11,5 @@ describe('${name} test', () => {
     getByRole('${name}')
   })
 })
-`;
+`
 }

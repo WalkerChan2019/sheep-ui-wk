@@ -1,4 +1,4 @@
-import { defineComponent, withModifiers, ref } from "vue";
+import { defineComponent, withModifiers, ref } from 'vue'
 
 //1-函数式组件
 // export default () => <div>tree walker</div>;
@@ -12,29 +12,29 @@ export default defineComponent({
   directives: {
     focus: {
       mounted(el) {
-        el.focus();
+        el.focus()
       }
     }
   },
   setup(props, { slots }) {
     //emit  ----> 此处npm run lint会报错：emit
-    const count = ref(0);
+    const count = ref(0)
     const inc = () => {
-      count.value++;
+      count.value++
       // emit("click");
-    };
+    }
 
     return () => {
       // jsx语法里没有v-if  v-show这类的用法 需要写三元运算符
-      const span = true ? <span>a</span> : <span>b</span>;
+      const span = true ? <span>a</span> : <span>b</span>
       // 列表
-      const list = ref<string[]>(["a1", "b1", "c1"]);
+      const list = ref<string[]>(['a1', 'b1', 'c1'])
 
       {
         /* 修饰符 */
       }
       return (
-        <div onClick={withModifiers(inc, ["self"])}>
+        <div onClick={withModifiers(inc, ['self'])}>
           点击test:{count.value}
           <br />
           {/* 传值 参数 修饰符 */}
@@ -53,12 +53,12 @@ export default defineComponent({
           {/* 默认插槽内容 */}
           <div>{slots.default && slots.default()}</div>
           {/* 具名插槽 */}
-          <div>{slots.title ? slots.title() : "slots default"}</div>
+          <div>{slots.title ? slots.title() : 'slots default'}</div>
         </div>
-      );
-    };
+      )
+    }
   }
-});
+})
 
 // export default defineComponent({
 //   render() {

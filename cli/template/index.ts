@@ -1,7 +1,7 @@
-import { upperFirst } from "./utils";
+import { upperFirst } from './utils'
 
 export default function genIndexTemplate(name) {
-  const compName = upperFirst(name);
+  const compName = upperFirst(name)
   return `\
 import { App } from 'vue'
 import ${compName} from './src/${name}'
@@ -17,5 +17,5 @@ export default {
     installComponent(app, ${compName}, options)
   }
 }
-`;
+`
 }

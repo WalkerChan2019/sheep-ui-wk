@@ -1,4 +1,4 @@
-import { ExtractPropTypes, PropType } from "vue";
+import { ExtractPropTypes, PropType } from 'vue'
 
-export const treeWkProps = {} as const;
-export type TreeWkProps = ExtractPropTypes<typeof treeWkProps>;
+export const treeWkProps = {} as const
+export type TreeWkProps = ExtractPropTypes<typeof treeWkProps>

@@ -1,12 +1,12 @@
-import { defineComponent, toRefs } from "vue";
-import { TreeWkProps, treeWkProps } from "./treeWk-type";
+import { defineComponent, toRefs } from 'vue'
+import { TreeWkProps, treeWkProps } from './treeWk-type'
 
 export default defineComponent({
-  name: "STreeWk",
+  name: 'STreeWk',
   props: treeWkProps,
   setup(props: TreeWkProps) {
     return () => {
-      return <div class="s-treeWk"></div>;
-    };
+      return <div class="s-treeWk"></div>
+    }
   }
-});
+})

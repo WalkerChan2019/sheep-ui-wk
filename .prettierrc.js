@@ -3,8 +3,8 @@ module.exports = {
 
   tabWidth: 2,
   // useTabs: false,
-  semi: true, // 未尾逗号, default:  true
-  singleQuote: false, // 单引号 default: false
+  semi: false, // 未尾逗号, default:  true
+  singleQuote:true, // 单引号 default: false
   // quoteProps: 'as-needed',
   // jsxSingleQuote: false,
   trailingComma: 'none', // 未尾分号 default: es5    all | none | es5
